@@ -3,24 +3,87 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>HTML</title>
+        <title>Juliane Cardoso da Silva | Porfólio Web</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <style>
+
+            body {
+                font-family: 'Source Sans Pro', sans-serif;
+                background-color: #92DCE5;
+            }
+
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 50px;
+                text-align: center;
+                color: #D64933;
+            }
+
+            p, ul {
+                color: #2B303A;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .profile-img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 50%;
+                width: 200px;
+            }
+
+            .title-style {
+                text-align: center;
+                color: #D64933;
+                font-size: 1.5em;
+            }
+
+            .social-medias {
+                text-align: center;
+            }
+
+            .social-medias a {
+                padding: 15px;
+            }
+
+            #footer {
+                text-align: center;
+                background-color: #2B303A;
+                
+            }
+
+            #footer a {
+                color: #eee5e9;
+                padding: 30px;
+            }
+
+        </style>
     </head>
 
     <body>
         <h1>Juliane Cardoso da Silva</h1>
 
-        <img id="foto_perfil" src="imagens/IMG_20201228_000332_327.jpg" alt="Juliane Cardoso da Silva" width="200">
+        <img id="foto_perfil" class="profile-img" src="imagens/IMG_20201228_000332_327.jpg" alt="Juliane Cardoso da Silva">
+        <br>
+
+        <p class="social-medias"><a href="https://www.linkedin.com/in/juliane-cardoso-silva/" target="_blank">LinkedIn</a> | <a href="https://julianesilvac75.github.io/" target="_blank">GitHub</a></p>
 
         <br><br>
 
-        <h3 id="sobre">Sobre mim:</h3>
+        <h3 id="sobre" class="title-style">Sobre mim:</h3>
         <p>Sou estudante de Desenvolvimento Web e <em> uma verdadeira apaixonada por aprender coisas novas</em>. Foi isso o que me levou a adentrar o mundo da tecnologia, em paralelo à graduação em Letras.</p>  
         <p>Acredito que <strong> a tecnologia e a educação mudam o mundo</strong>, e sonho em fazer parte dessa mudança, impactando positivamente a vida das pessoas.</p>
         <p>Tenho 25 anos, sou brasileira e moro em Fazenda Rio Grande/PR com meu noivo e nossa cachorrinha, a Nina.
         </p>
         <br>
 
-        <h3 id="habilidades">Habilidades:</h3>
+        <h3 id="habilidades" class="title-style">Habilidades:</h3>
         <p>Estou iniciando minha jornada no mundo da tecnologia e do Desenvolvimento Web, e até agora já desenvolvi as seguintes habilidades:</p>
         <ul>
             <li>HTML</li>
@@ -40,16 +103,17 @@
 
         <br>
 
-        <h3 id="favoritos">Favoritos:</h3>
+        <h3 id="favoritos" class="title-style">Favoritos:</h3>
         <ul>
             <li>Blog <a href="https://www.programaria.org/" target="_blank">PrograMaria</a>: <em> site sobre mulheres na tecnologia.</em> </li>
         </ul>
         <br><br>
-
-        <a href="#foto_perfil">Início</a> | 
-        <a href="#sobre">Sobre mim</a> |
-        <a href="#habilidades">Habilidades</a> |
-        <a href="#favoritos">Favoritos</a>
+        <p id="footer">
+            <a href="#foto_perfil">Início</a> 
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#favoritos">Favoritos</a>
+        </p>
 
     </body>
   
