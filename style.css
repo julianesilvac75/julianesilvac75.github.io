@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #92DCE5;
+}
+
+.name {
+    margin: 30px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #D64933;
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 670px;
+}
+
+
+p, ul {
+    color: #2B303A;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro {
+    margin: 25px;
+    height: 280px;
+    background-color: #EEE5E9;
+    padding: 25px;
+
+}
+
+.profile-img {
+    float: left;
+}
+
+.about-me {
+    width: 60%;
+    float: right;
+    padding-left: 15px;
+    text-align: end;
+    
+}
+
+#foto_perfil {
+    border-radius: 50%;
+    width: 200px;
+}
+
+div.about-me h3 {
+    margin-bottom: 20px;
+}
+
+.title-style {
+    color: #D64933;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.social-medias {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.social-medias a {
+    padding: 15px;
+}
+
+.habilidades, .favorites {
+    margin: 25px;
+    background-color: #EEE5E9;
+    padding: 25px;
+}
+
+.habilidades {
+    clear: both;
+}
+
+ul {
+    margin-left: 40px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+a {
+    color: #2B303A;
+}
+
+.footer a {
+    
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 10%;
+}
+
+a:hover{
+    font-weight: bolder;
+}
+
+.habilidades ul li:nth-of-type(2n+1){
+    font-style: italic;
+}
