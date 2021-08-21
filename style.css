@@ -69,6 +69,7 @@ div.about-me h3 {
 .title-style {
     color: #D64933;
     font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .social-medias {
@@ -88,6 +89,10 @@ div.about-me h3 {
 
 .habilidades {
     clear: both;
+}
+
+ul {
+    margin-left: 40px;
 }
 
 .footer {
