@@ -97,14 +97,24 @@ ul {
 
 .footer {
     text-align: center;
-    background-color: #2B303A;
+    margin-top: 40px;
+}
+
+a {
+    color: #2B303A;
 }
 
 .footer a {
-    color: #eee5e9;
-    padding: 30px;
+    
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 10%;
 }
 
-div.habilidades ul li:nth-of-type(2n+1){
+a:hover{
+    font-weight: bolder;
+}
+
+.habilidades ul li:nth-of-type(2n+1){
     font-style: italic;
 }
