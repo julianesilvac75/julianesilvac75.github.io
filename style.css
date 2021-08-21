@@ -1,0 +1,52 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #92DCE5;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #D64933;
+}
+
+p, ul {
+    color: #2B303A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.title-style {
+    text-align: center;
+    color: #D64933;
+    font-size: 1.5em;
+}
+
+.social-medias {
+    text-align: center;
+}
+
+.social-medias a {
+    padding: 15px;
+}
+
+#footer {
+    text-align: center;
+    background-color: #2B303A;
+    
+}
+
+#footer a {
+    color: #eee5e9;
+    padding: 30px;
+}
