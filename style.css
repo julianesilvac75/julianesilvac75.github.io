@@ -6,7 +6,11 @@
 
 body {
     font-family: Raleway, sans-serif;
-    background-color: #92DCE5;
+    background-color: rgb(146, 220, 229);
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -23,120 +27,60 @@ header {
     padding: 25px 30px 15px 0;
 }
 .top-nav ul li a {
-    color: #7C7C7C;
+    color: rgb(124, 124, 124);
     letter-spacing: -1px;
     text-transform: uppercase;
     
 }
 
 .top-nav ul li a:hover {
-    color: #EEE5E9;
+    color: rgb(238, 229, 233);
     font-weight: 600;
     transition: color 1s;
 }
 
-.name {
-    margin: 30px;
-    position: relative;
+main {
+    margin-top: 60px;
     top: 60px;
 }
 
-h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    color: #D64933;
-}
-
-.container {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 670px;
-}
-
-
-p, ul {
-    color: #2B303A;
-    margin-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
 .intro {
-    margin: 25px;
-    height: 280px;
-    background-color: #EEE5E9;
-    padding: 25px;
-
-}
-
-.profile-img {
+    color: rgb(43, 48, 58);
     float: left;
+    font-family: Inconsolata, monospace;
+    margin-bottom: 100px;
+    padding: 20px;
+    width: 50%;
 }
 
-.about-me {
-    width: 60%;
-    float: right;
-    padding-left: 15px;
-    text-align: end;
-    
+.intro h1 {
+    font-size: 7em;
+    margin: 40px;
 }
 
-#foto_perfil {
-    border-radius: 50%;
-    width: 200px;
-}
-
-div.about-me h3 {
-    margin-bottom: 20px;
-}
-
-.title-style {
-    color: #D64933;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.social-medias {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.social-medias a {
-    padding: 15px;
-}
-
-.habilidades, .favorites {
-    margin: 25px;
-    background-color: #EEE5E9;
-    padding: 25px;
-}
-
-.habilidades {
-    clear: both;
-}
-
-ul {
+.intro h2 {
+    font-size: 3em;
     margin-left: 40px;
-}
-
-.footer {
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 40px;
 }
 
-
-.footer a {
-    
-    padding: 10px 20px;
-    margin: 10px 20px;
-    border-radius: 10%;
+.name {
+    color: #D64933;
+    font-weight: bolder;
 }
 
+.info {
+    float: right;
+    width: 40%;
+}
 
-.habilidades ul li:nth-of-type(2n+1){
-    font-style: italic;
+.info img {
+    border-radius: 100%;
+    clear: both;
+    width: 150px;
+}
+
+.arrumar {
+    clear: both;
 }
