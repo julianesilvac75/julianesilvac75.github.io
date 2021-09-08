@@ -116,6 +116,50 @@ main {
     border: 1px solid rgb(43, 48, 58);
     border-radius: 20%;
 }
-.arrumar {
+#skills {
+    background-color: rgb(238, 229, 233);
+    clear: both;
+    height: 430px;
+    padding: 50px;
+}
+
+#skills section {
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+}
+
+.hard-skills {
+    float: left;
+}
+
+.section-title {
+    color: rgb(214, 73, 51);
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.hard-skills div {
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 30px;
+}
+
+.icons {
+    font-size: 60px;
+}
+
+.soft-skills {
+    float: right;
+}
+
+.soft-skills li {
+    display: inline-block;
+    list-style: none;
+    margin: 30px;
+}
+
+.habilidades {
     clear: both;
 }
