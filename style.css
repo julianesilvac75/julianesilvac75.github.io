@@ -50,7 +50,9 @@ main {
 
 .about-me-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* justify-content: space-between; */
     min-height: 100vh;
 }
 
@@ -58,7 +60,7 @@ main {
     color: rgb(43, 48, 58);
     font-family: Inconsolata, monospace;
     padding: 20px;
-    width: 50%;
+    flex-basis: 600px;
 }
 
 .intro h1 {
@@ -79,10 +81,9 @@ main {
 }
 
 .info {
-    float: right;
     text-align: center;
+    flex-basis: 550px;
     padding: 40px;
-    width: 40%;
 }
 
 .info img {
