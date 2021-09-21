@@ -16,15 +16,19 @@ a {
 
 header {
     background-color: rgb(43, 48, 58);
+    display: flex;
     height: 60px;
     position: fixed;
-    text-align: end;
+    justify-content: end;
     top: 0;
     width: 100%;
 }
 
+.nav-container {
+  display: flex;
+}
+
 .top-nav ul li{
-    display: inline-block;
     padding: 25px 30px 15px 0;
 }
 .top-nav ul li a {
@@ -42,14 +46,17 @@ header {
 
 main {
     margin-top: 60px;
-    top: 60px;
 }
 
-.intro {
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+ .intro {
     color: rgb(43, 48, 58);
-    float: left;
     font-family: Inconsolata, monospace;
-    margin-bottom: 100px;
     padding: 20px;
     width: 50%;
 }
@@ -102,35 +109,36 @@ main {
     font-weight: 600;
 }
 
+
 .social-medias li {
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
 }
 
 .social-medias li a {
     border: 1px solid rgb(146, 220, 229);
-    padding: 15px;
+    padding: 10px;
 }
 
 .social-medias li a:hover {
     border: 1px solid rgb(43, 48, 58);
     border-radius: 20%;
 }
+
+
 #skills {
     background-color: rgb(238, 229, 233);
-    clear: both;
-    height: 430px;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    min-height: 430px;
+    padding: 40px 50px 30px 50px;
 }
+
 
 #skills section {
     padding: 20px;
     text-align: center;
     width: 40%;
-}
-
-.hard-skills {
-    float: left;
 }
 
 .section-title {
@@ -150,16 +158,92 @@ main {
     font-size: 60px;
 }
 
-.soft-skills {
-    float: right;
-}
-
 .soft-skills li {
     display: inline-block;
     list-style: none;
     margin: 30px;
 }
 
-.habilidades {
-    clear: both;
+#projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 430px;
+}
+
+#favorites {
+    align-items: center;
+    background-color: rgb(238, 229, 233);
+    display: flex;
+    flex-direction: column;
+    min-height: 430px;
+}
+
+.favorites-container {
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+}
+
+.favorites-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    margin: 10px 30px;
+}
+
+.description {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.title a {
+    color: rgb(214, 73, 51);
+}
+
+footer {
+    background-color: rgb(43, 48, 58);
+    color: rgb(124, 124, 124);
+}
+
+.footer-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* padding: 15px; */
+}
+
+.contact-container {
+    display: flex;
+    font-size: 0.9em;
+}
+
+.contact-container div {
+    margin: 30px 60px;
+}
+
+.contact-container h4 {
+    margin-bottom: 10px;
+}
+
+.contact-container a {
+    color: rgb(124, 124, 124);
+    font-size: 25px;
+    padding: 5px;
+}
+
+.contact-container a:hover {
+    color: rgb(238, 229, 233);
+}
+
+.bottom-container {
+    font-size: 0.7em;
+    margin: 15px;
 }
