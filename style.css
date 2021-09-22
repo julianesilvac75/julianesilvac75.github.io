@@ -52,7 +52,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* justify-content: space-between; */
     min-height: 100vh;
 }
 
@@ -178,6 +177,7 @@ main {
     background-color: rgb(238, 229, 233);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 430px;
 }
 
@@ -192,7 +192,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-basis: 200px;
-    margin: 10px 30px;
+    margin: 30px 30px;
 }
 
 .description {
@@ -207,6 +207,104 @@ main {
 
 .title a {
     color: rgb(214, 73, 51);
+}
+
+.projects-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.project-box {
+    background-color: rgb(43, 48, 58);
+    box-shadow: 2px 2px 10px rgb(43, 48, 58);
+    color: rgb(238, 229, 233);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 450px;
+}
+
+.project-box:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-box:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.content {
+    display: none;
+    margin: 15px 0 10px 0;
+}
+
+.content img {
+    width: 450px;
+}
+
+.project-name {
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 20px; */
+}
+
+.project-name h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.project-name ul {
+    display: flex;
+}
+
+.project-name ul li {
+    color: rgb(214, 73, 51);
+    font-size: 0.8em;
+    font-weight: 600;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.content p {
+    font-size: 0.9em;
+    margin-top: 5px;
+    width: 450px;
+}
+
+.content p a {
+    color: rgb(238, 229, 233);
+}
+
+.content p a:hover {
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    color: rgb(214, 73, 51);
+    font-size: 0.9em;
+    margin: 15px 15px 0 15px;
+}
+
+.links a:hover {
+    font-weight: 800;
 }
 
 footer {
