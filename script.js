@@ -3,7 +3,7 @@
 const menuBars = document.getElementById('bars-menu');
 
 menuBars.addEventListener('click', () => {
-    const topNav = document.getElementById('top-nav');
+    const topNav = document.getElementById('nav-container');
     const navDisplay = window.getComputedStyle(topNav).getPropertyValue('display');
 
     (navDisplay === 'flex') ? topNav.style.display = 'none' : topNav.style.display = 'flex';
