@@ -1,6 +1,17 @@
-let projectBox = document.getElementsByClassName('project-box');
+// Barra de navegação
 
-console.log(projectBox);
+const menuBars = document.getElementById('bars-menu');
+
+menuBars.addEventListener('click', () => {
+    const topNav = document.getElementById('nav-container');
+    const navDisplay = window.getComputedStyle(topNav).getPropertyValue('display');
+
+    (navDisplay === 'flex') ? topNav.style.display = 'none' : topNav.style.display = 'flex';
+})
+
+// Seção projetos
+
+const projectBox = document.getElementsByClassName('project-box');
 
 for (let index = 0; index < projectBox.length; index += 1) {
     projectBox[index].addEventListener('click', function() {

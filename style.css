@@ -15,32 +15,48 @@ a {
 }
 
 header {
+    align-items: flex-end;
     background-color: rgb(43, 48, 58);
     display: flex;
-    height: 60px;
+    flex-direction: column;
     position: fixed;
-    justify-content: end;
     top: 0;
     width: 100%;
 }
 
-.nav-container {
-  display: flex;
+#bars-menu {
+    align-self: flex-end;
+    color: white;
+    font-size: 40px;
+    margin: 10px 30px;
+    display: none;
 }
 
-.top-nav ul li{
+#bars-menu:hover {
+    cursor: pointer;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-container li{
     padding: 25px 30px 15px 0;
 }
-.top-nav ul li a {
+.nav-container li a {
     color: rgb(124, 124, 124);
     letter-spacing: -1px;
+    font-weight: 600;
     text-transform: uppercase;
-    
 }
 
-.top-nav ul li a:hover {
+.nav-container li a:hover {
     color: rgb(238, 229, 233);
-    font-weight: 600;
     transition: color 1s;
 }
 
@@ -254,10 +270,8 @@ main {
 }
 
 .project-name {
-    /* align-items: center; */
     display: flex;
     flex-direction: column;
-    /* margin-right: 20px; */
 }
 
 .project-name h4 {
@@ -316,7 +330,6 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* padding: 15px; */
 }
 
 .contact-container {
@@ -345,4 +358,29 @@ footer {
 .bottom-container {
     font-size: 0.7em;
     margin: 15px;
+}
+
+@media (max-width: 600px) {
+    #bars-menu {
+        display: block;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .top-nav {
+        align-self: center;
+    }
+
+    .nav-container {
+        align-items: center;
+        display: none;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .nav-container li a {
+        font-size: 1.3em;
+    }
 }
