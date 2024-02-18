@@ -15,7 +15,7 @@
 }
 
 body {
-	color: rgb(43, 48, 58);
+	background-color: rgb(43, 48, 58);
 	font-family: Raleway, sans-serif;
 }
 
@@ -30,7 +30,7 @@ header {
   /* justify-content: end; */
 	min-height: auto;
   position: fixed;
-  /* top: 0; */
+  top: 0;
   width: 100%;
 }
 
@@ -55,8 +55,6 @@ header {
 #nav-icon {
 	/* color: rgb(238, 229, 233); */
 	display: unset;
-	
-	
 }
 
 .nav-container {
@@ -93,6 +91,49 @@ header {
 	text-decoration: none;
 }
 
+main {
+	display: flex;
+	align-items: center;
+	padding-top: 92px;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+.intro {
+	/* border: 1px red solid; */
+	color: rgb(146, 220, 229);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Inconsolata, monospace;
+	padding: 25px;
+	/* flex-basis: 600px; */
+}
+
+.intro h1 {
+	font-size: 60px;
+	font-weight: lighter;
+	margin: 30px 0;
+}
+
+.intro h2 {
+	text-align: center;
+	font-weight: lighter;
+	font-size: 38px;
+	margin: 30px 0;
+}
+
+.name {
+	color: rgb(214, 73, 51);
+	font-weight: bolder;
+}
+
+.intro p {
+	text-align: center;
+	font-family: Raleway, sans-serif;
+	margin: 50px 0;
+}
+
 /* 
 .top-nav ul li{
     padding: 25px 30px 15px 0;
@@ -116,12 +157,7 @@ main {
     min-height: 100vh;
 }
 
- .intro {
-    color: rgb(43, 48, 58);
-    font-family: Inconsolata, monospace;
-    padding: 20px;
-    flex-basis: 600px;
-}
+
 
 .intro h1 {
     font-size: 7em;
