@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+#teste {
+    font-family: 'Inconsolata', monospace;
+    font-size: 80px;
+}
+
+#teste2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+}
+
 /* * {
     margin: 0;
     padding: 0;
