@@ -1,42 +1,176 @@
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
-    color: rgb(43, 48, 58);
-    font-family: Raleway, sans-serif;
-    background-color: rgb(146, 220, 229);
+	background-color: rgb(43, 48, 58);
+	font-family: Raleway, sans-serif;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 header {
-    background-color: rgb(43, 48, 58);
-    display: flex;
-    height: 60px;
-    position: fixed;
-    justify-content: end;
-    top: 0;
-    width: 100%;
+  background-color: rgb(43, 48, 58);
+  /* display: flex; */
+  /* height: 12vh; */
+  /* justify-content: end; */
+	min-height: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.top-nav {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.icon-container {
+	align-self: flex-end;
+	font-size: xx-large;
+	padding: 27px 40px;
+	color: rgb(124, 124, 124);
+	/* border: 1px yellow solid; */
+}
+
+#hide-nav-icon {
+	display: none;
+}
+
+#nav-icon {
+	/* color: rgb(238, 229, 233); */
+	display: unset;
 }
 
 .nav-container {
-  display: flex;
+	align-self: center;
+	align-items: center;
+	background-color: rgb(43, 48, 58);
+	display: none;
+	flex-direction: column;
+	height: 80vh;
+	/* justify-content: space-around; */
+	list-style: none;
+	/* margin: 20px 0; */
+	padding: 50px 0;
+	width: 100vw;
 }
 
 .top-nav ul li{
+	padding: 30px;
+}
+
+.top-nav ul li a {
+	/* color: rgb(124, 124, 124); */
+	color: rgb(238, 229, 233);
+	font-size: xx-large;
+	font-style: unset;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+
+.top-nav ul li a:active {
+	outline: none;
+	color: rgb(124, 124, 124);
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	padding-top: 92px;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+.intro {
+	/* border: 1px red solid; */
+	color: rgb(146, 220, 229);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Inconsolata, monospace;
+	padding: 25px;
+	/* flex-basis: 600px; */
+}
+
+.intro h1 {
+	font-size: 60px;
+	font-weight: lighter;
+	margin: 30px 0;
+}
+
+.intro h2 {
+	text-align: center;
+	font-weight: lighter;
+	font-size: 38px;
+	margin: 30px 0;
+}
+
+.name {
+	color: rgb(214, 73, 51);
+	font-weight: bolder;
+}
+
+.intro p {
+	text-align: center;
+	font-family: Raleway, sans-serif;
+	margin: 50px 0;
+}
+
+#arrows-down {
+	margin-top: 120px;
+	width: 75px;
+  height: 65px;
+	animation: bounce 1s infinite alternate; 
+}
+
+polygon {
+  fill: rgb(124, 124, 124);
+  transition: all .2s ease-out;
+    
+  &.arrow-middle {
+	  opacity: 0.75;
+	}
+
+	&.arrow-top {
+	  opacity: 0.5
+	}
+	 
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
+
+/* REFERENCES FOR THE ARROWS: https://codepen.io/malavigne/pen/gMQGJd and ChatGPT */
+
+/* 
+.top-nav ul li{
     padding: 25px 30px 15px 0;
 }
-.top-nav ul li a {
-    color: rgb(124, 124, 124);
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    
-}
+
 
 .top-nav ul li a:hover {
     color: rgb(238, 229, 233);
@@ -55,12 +189,7 @@ main {
     min-height: 100vh;
 }
 
- .intro {
-    color: rgb(43, 48, 58);
-    font-family: Inconsolata, monospace;
-    padding: 20px;
-    flex-basis: 600px;
-}
+
 
 .intro h1 {
     font-size: 7em;
@@ -254,10 +383,10 @@ main {
 }
 
 .project-name {
-    /* align-items: center; */
+    align-items: center;
     display: flex;
     flex-direction: column;
-    /* margin-right: 20px; */
+    margin-right: 20px;
 }
 
 .project-name h4 {
@@ -316,7 +445,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* padding: 15px; */
+    padding: 15px;
 }
 
 .contact-container {
@@ -345,4 +474,4 @@ footer {
 .bottom-container {
     font-size: 0.7em;
     margin: 15px;
-}
+} */
