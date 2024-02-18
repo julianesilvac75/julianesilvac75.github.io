@@ -1,16 +1,28 @@
-let navIcon = document.getElementsByClassName('nav-icon');
+let iconContainer = document.getElementsByClassName('icon-container')[0];
 
-navIcon[0].addEventListener('click', () => {
+function changeNavIcon(option) {
+    let closeIcon = document.getElementsByClassName('fa-xmark')[0];
+    let burgerIcon = document.getElementsByClassName('fa-burger')[0];
+
+    if(option === 'open') {
+        burgerIcon.id = 'hide-nav-icon';
+        closeIcon.id = 'nav-icon';
+    } else {
+        closeIcon.id = 'hide-nav-icon';
+        burgerIcon.id = 'nav-icon';
+    }
+};
+
+iconContainer.addEventListener('click', () => {
     let navContainer = document.getElementsByClassName('nav-container')[0];
-    let navIcon = document.getElementsByClassName('nav-icon')[0];
     let navContainerDisplay = window.getComputedStyle(navContainer).getPropertyValue('display');
 
     if(navContainerDisplay === 'none') {
+        changeNavIcon('open');
         navContainer.style.display = 'flex';
-        navIcon.style.color = 'rgb(238, 229, 233)';
     } else {
+        changeNavIcon('close');
         navContainer.style.display = 'none';
-        navIcon.style.color = 'rgb(124, 124, 124)';
     }
 });
 

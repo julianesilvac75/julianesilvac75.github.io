@@ -40,14 +40,23 @@ header {
 
 }
 
-.nav-icon {
+.icon-container {
 	align-self: flex-end;
-	/* justify-self: center; */
-	/* border: 1px yellow solid; */
-	/* color: rgb(238, 229, 233); */
-	color: rgb(124, 124, 124);
 	font-size: xx-large;
 	padding: 27px 40px;
+	color: rgb(124, 124, 124);
+	/* border: 1px yellow solid; */
+}
+
+#hide-nav-icon {
+	display: none;
+}
+
+#nav-icon {
+	/* color: rgb(238, 229, 233); */
+	display: unset;
+	
+	
 }
 
 .nav-container {
