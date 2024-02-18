@@ -134,6 +134,38 @@ main {
 	margin: 50px 0;
 }
 
+#arrows-down {
+	margin-top: 120px;
+	width: 75px;
+  height: 65px;
+	animation: bounce 1s infinite alternate; 
+}
+
+polygon {
+  fill: rgb(124, 124, 124);
+  transition: all .2s ease-out;
+    
+  &.arrow-middle {
+	  opacity: 0.75;
+	}
+
+	&.arrow-top {
+	  opacity: 0.5
+	}
+	 
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
+
+/* REFERENCES FOR THE ARROWS: https://codepen.io/malavigne/pen/gMQGJd and ChatGPT */
+
 /* 
 .top-nav ul li{
     padding: 25px 30px 15px 0;
