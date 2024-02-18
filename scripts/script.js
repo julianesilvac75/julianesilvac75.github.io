@@ -2,12 +2,15 @@ let navIcon = document.getElementsByClassName('nav-icon');
 
 navIcon[0].addEventListener('click', () => {
     let navContainer = document.getElementsByClassName('nav-container')[0];
+    let navIcon = document.getElementsByClassName('nav-icon')[0];
     let navContainerDisplay = window.getComputedStyle(navContainer).getPropertyValue('display');
 
-    if(navContainerDisplay === 'flex') {
-        navContainer.style.display = 'none';
-    } else {
+    if(navContainerDisplay === 'none') {
         navContainer.style.display = 'flex';
+        navIcon.style.color = 'rgb(238, 229, 233)';
+    } else {
+        navContainer.style.display = 'none';
+        navIcon.style.color = 'rgb(124, 124, 124)';
     }
 });
 

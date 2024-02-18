@@ -44,7 +44,8 @@ header {
 	align-self: flex-end;
 	/* justify-self: center; */
 	/* border: 1px yellow solid; */
-	color: rgb(238, 229, 233);
+	/* color: rgb(238, 229, 233); */
+	color: rgb(124, 124, 124);
 	font-size: xx-large;
 	padding: 27px 40px;
 }
@@ -68,12 +69,19 @@ header {
 }
 
 .top-nav ul li a {
-	color: rgb(124, 124, 124);
+	/* color: rgb(124, 124, 124); */
+	color: rgb(238, 229, 233);
 	font-size: xx-large;
 	font-style: unset;
 	font-weight: bold;
 	letter-spacing: -1px;
 	text-transform: uppercase;
+}
+
+.top-nav ul li a:active {
+	outline: none;
+	color: rgb(124, 124, 124);
+	text-decoration: none;
 }
 
 /* 
