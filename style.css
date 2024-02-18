@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -254,10 +254,10 @@ main {
 }
 
 .project-name {
-    /* align-items: center; */
+    align-items: center;
     display: flex;
     flex-direction: column;
-    /* margin-right: 20px; */
+    margin-right: 20px;
 }
 
 .project-name h4 {
@@ -316,7 +316,7 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* padding: 15px; */
+    padding: 15px;
 }
 
 .contact-container {
@@ -345,4 +345,4 @@ footer {
 .bottom-container {
     font-size: 0.7em;
     margin: 15px;
-}
+} */
