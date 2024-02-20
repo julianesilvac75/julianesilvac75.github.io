@@ -42,7 +42,7 @@ header {
 
 .icon-container {
 	align-self: flex-end;
-	font-size: xx-large;
+	font-size: 50px;
 	padding: 27px 40px;
 	color: rgb(124, 124, 124);
 	/* border: 1px yellow solid; */
@@ -147,7 +147,7 @@ main {
 }
 
 #arrows-down {
-	margin-top: 120px;
+	margin-top: 70px;
 	width: 75px;
   height: 65px;
 	animation: bounce 1s infinite alternate; 
