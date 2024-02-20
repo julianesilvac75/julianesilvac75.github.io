@@ -26,23 +26,23 @@ iconContainer.addEventListener('click', () => {
     }
 });
 
+var emojiV = document.getElementsByClassName('emoji-v')[0];
 
+function displayEmoji(option) {
+	emojiV.style.display = option;
+}
 
-// navContainer[0].style.display = 'none';
+function changingEmoji(displayEmoji) {
+	setTimeout(() => displayEmoji('none'), 1200);
+	setTimeout(() => displayEmoji('unset'), 1300);
+	
+	setTimeout(() => displayEmoji('none'), 3000);
+	setTimeout(() => displayEmoji('unset'), 3100);
+}
 
-// let projectBox = document.getElementsByClassName('project-box');
+changingEmoji(displayEmoji);
+let changingInterval = setInterval(() => changingEmoji(displayEmoji), 8000)
 
-// console.log(projectBox);
-
-// for (let index = 0; index < projectBox.length; index += 1) {
-//     projectBox[index].addEventListener('click', function() {
-//         let content = document.getElementsByClassName('content')[index];
-//         let mainDisplay = window.getComputedStyle(content).getPropertyValue('display')
-        
-//         if(mainDisplay === 'none') {
-//             content.style.display = 'unset';
-//         } else {
-//             content.style.display = 'none';
-//         }
-//     })
-// }
+setTimeout(() => {
+	clearInterval(changingInterval)
+}, 1000*1000);
