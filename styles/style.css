@@ -23,6 +23,10 @@ a {
 	text-decoration: none;
 }
 
+main {
+	justify-content: center;
+}
+
 header {
   background-color: rgb(43, 48, 58);
   /* display: flex; */
