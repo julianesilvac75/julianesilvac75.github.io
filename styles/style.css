@@ -23,10 +23,6 @@ a {
 	text-decoration: none;
 }
 
-main {
-	justify-content: center;
-}
-
 header {
   background-color: rgb(43, 48, 58);
   /* display: flex; */
@@ -98,6 +94,7 @@ header {
 main {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding-top: 92px;
 	height: 100vh;
 	box-sizing: border-box;
@@ -169,6 +166,43 @@ polygon {
 	  opacity: 0.5
 	}
 	 
+}
+
+@media screen and (min-height: 768px) {
+	.intro p {
+		margin: 93px 0;
+	}
+	
+	#arrows-down {
+		margin-top: 110px;
+	}
+}
+
+@media screen and (min-height: 1010px) and (min-width: 570px) {
+	.intro{
+		padding: 15px 30px;
+	}
+	
+	.intro h1 {
+		font-size: 80px;
+	}
+
+	.intro h2 {
+		font-size: 55px;
+	}
+
+	.underline{
+		width: 234px;
+	}
+
+	.intro p {
+		font-size: 23px;
+	}
+
+	#arrows-down {
+		border: 1px solid yellow;
+		margin-top: 150px;
+	}
 }
 
 @keyframes bounce {
