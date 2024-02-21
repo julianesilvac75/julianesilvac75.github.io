@@ -42,7 +42,7 @@ header {
 
 .icon-container {
 	align-self: flex-end;
-	font-size: xx-large;
+	font-size: 50px;
 	padding: 27px 40px;
 	color: rgb(124, 124, 124);
 	/* border: 1px yellow solid; */
@@ -94,6 +94,7 @@ header {
 main {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding-top: 92px;
 	height: 100vh;
 	box-sizing: border-box;
@@ -111,26 +112,58 @@ main {
 }
 
 .intro h1 {
+	display: flex;
+	align-items: center;
 	font-size: 60px;
 	font-weight: lighter;
 	margin: 30px 0;
 }
 
-.intro h2 {
+.emoji-container {
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+}
+
+ .intro h2 {
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
 	text-align: center;
+	/* justify-content: center; */
 	font-weight: lighter;
 	font-size: 38px;
-	margin: 30px 0 0 0;
+	/* margin: 30px 0 0 0; */
+}
+
+.name-container {
+	/* align-items: center; */
+	/* position: relative; */
+	/* top: 30px;  */
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	margin-top: 20px;
 }
 
 .name {
+	/* display: block; */
 	color: rgb(214, 73, 51);
-	font-weight: bolder;
+	/* font-weight: bolder; */
+}
+
+.dot{ 
+	/* display: block; */
+	position: relative;
+	right: 22px;
 }
 
 .underline {
-    width: 150px;
-}
+	/* flex: 50% 50%; */
+  position: relative;
+	bottom: 18px;
+	right: 15px;
+  max-width: 150px; 
+} 
 
 .intro p {
 	text-align: center;
@@ -139,7 +172,7 @@ main {
 }
 
 #arrows-down {
-	margin-top: 120px;
+	margin-top: 65px;
 	width: 75px;
   height: 65px;
 	animation: bounce 1s infinite alternate; 
@@ -157,6 +190,59 @@ polygon {
 	  opacity: 0.5
 	}
 	 
+}
+
+@media screen and (min-height: 768px) {
+	.intro p {
+		margin: 88px 0;
+	}
+	
+	#arrows-down {
+		margin-top: 65px;
+	}
+}
+
+@media screen and (min-width: 517px) {
+	.intro {
+		padding: 65px;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.intro h2 {
+		display: flex;
+		flex-direction: row;
+		margin-top: 20px;
+	}
+
+	.name-container {
+		margin-top: 0;
+	}
+
+	#arrows-down {
+		margin-top: 130px;
+	}
+}
+
+@media screen and (min-height: 1010px) {
+	
+
+	.intro h1 {
+		font-size: 80px;
+	}
+
+	.intro h2 {
+		font-size: 55px;
+	}
+
+	.intro p {
+		font-size: 23px;
+	}
+
+	#arrows-down {
+		border: 1px solid yellow;
+		margin-top: 150px;
+	}
 }
 
 @keyframes bounce {
