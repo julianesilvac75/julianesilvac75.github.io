@@ -172,9 +172,9 @@ main {
 }
 
 #arrows-down {
-	margin-top: 65px;
+	margin-top: 55px;
 	width: 75px;
-  height: 65px;
+	height: 65px;
 	animation: bounce 1s infinite alternate; 
 }
 
@@ -204,7 +204,7 @@ polygon {
 
 @media screen and (min-width: 517px) {
 	.intro {
-		padding: 65px;
+		padding: 0 65px;
 	}
 }
 
@@ -218,9 +218,12 @@ polygon {
 	.name-container {
 		margin-top: 0;
 	}
+}
 
+@media screen and (min-height: 900px) {
 	#arrows-down {
-		margin-top: 130px;
+		/* border: 1px solid yellow; */
+		margin-top: 170px;
 	}
 }
 
@@ -238,10 +241,12 @@ polygon {
 	.intro p {
 		font-size: 23px;
 	}
+}
 
+@media screen and (min-height: 1150px) {
 	#arrows-down {
-		border: 1px solid yellow;
-		margin-top: 150px;
+		/* border: 1px solid yellow; */
+		margin-top: 300px;
 	}
 }
 
