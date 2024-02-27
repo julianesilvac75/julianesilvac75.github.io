@@ -60,7 +60,7 @@ header {
 .nav-container {
 	align-self: center;
 	align-items: center;
-	background-color: rgb(43, 48, 58);
+	/* background-color: rgb(43, 48, 58); */
 	display: none;
 	flex-direction: column;
 	height: 80vh;
