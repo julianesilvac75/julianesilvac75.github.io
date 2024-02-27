@@ -192,6 +192,24 @@ polygon {
 	 
 }
 
+@media (hover: hover) {
+	.top-nav ul li a {
+		color: rgb(124, 124, 124);
+	}
+
+	.top-nav ul li a:hover {
+		color: rgb(238, 229, 233);
+	}
+
+	#arrows-down:hover {
+		cursor: pointer;
+
+		& polygon {
+			fill: rgb(238, 229, 233);
+		}
+	}
+}
+
 @media screen and (max-width: 320px) {
 	.intro {
 		padding: 0 10px;
@@ -238,6 +256,25 @@ polygon {
 	}
 }
 
+@media screen and (min-width: 1025px) {
+	.icon-container {
+		display: none;
+	}
+
+	.nav-container {
+		/* border: 1px solid red; */
+		justify-content: end;
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		height: auto;
+	}
+
+	.top-nav ul li a {
+		font-size: larger;
+	}
+}
+
 @media screen and (min-height: 850px) {
 	#arrows-down {
 		/* border: 1px solid yellow; */
@@ -246,8 +283,6 @@ polygon {
 }
 
 @media screen and (min-height: 1010px) {
-	
-
 	.intro h1 {
 		font-size: 80px;
 	}
