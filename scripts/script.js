@@ -7,24 +7,33 @@ function changeNavIcon(option) {
     if(option === 'open') {
         burgerIcon.id = 'hide-nav-icon';
         closeIcon.id = 'nav-icon';
+
     } else {
         closeIcon.id = 'hide-nav-icon';
         burgerIcon.id = 'nav-icon';
     }
 };
 
-iconContainer.addEventListener('click', () => {
+function toggleMenu() {
     let navContainer = document.getElementsByClassName('nav-container')[0];
     let navContainerDisplay = window.getComputedStyle(navContainer).getPropertyValue('display');
+    let nameContainer = document.getElementsByClassName('name-container')[0];
+    let arrowsDown = document.getElementById('arrows-down');
 
     if(navContainerDisplay === 'none') {
         changeNavIcon('open');
         navContainer.style.display = 'flex';
+        nameContainer.style.display = 'none';
+        arrowsDown.style.display = 'none';
     } else {
         changeNavIcon('close');
         navContainer.style.display = 'none';
+        nameContainer.style.display = 'unset';
+        arrowsDown.style.display = 'unset';
     }
-});
+}
+
+iconContainer.addEventListener('click', toggleMenu);
 
 var emojiV = document.getElementsByClassName('emoji-v')[0];
 
@@ -37,7 +46,7 @@ function changingEmoji(displayEmoji) {
 	setTimeout(() => displayEmoji('unset'), 1300);
 	
 	setTimeout(() => displayEmoji('none'), 3000);
-	setTimeout(() => displayEmoji('unset'), 3100);
+	setTimeout(() => displayEmoji('unset'), 3200);
 }
 
 changingEmoji(displayEmoji);
